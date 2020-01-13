@@ -5,6 +5,7 @@
 # 1. 에러 정리
     1. yarn glbal remove babel-cli 하면됨
     1. yarn add @babel/core -D
+
 # 1.2 다운받을꺼
     1. yarn add morgan
     1. yarn add graphql-tools merge-graphql-schemas
@@ -12,4 +13,8 @@
 # 2.0 프리즈마
     1. Pirsma : ORM 
     2. app.prisma.io
-    3.yarn add prisma-client-lib
+    3. yarn add prisma-client-lib
+
+# 3.0 graphql
+    1. yarn add nodemailer
+    2. yarn add nodemailer-sendgrid-transport
