@@ -11,4 +11,5 @@
 
 # 2.0 프리즈마
     1. Pirsma : ORM 
-    1. app.prisma.io
+    2. app.prisma.io
+    3.yarn add prisma-client-lib
