@@ -6,13 +6,16 @@ import { GraphQLServer } from "graphql-yoga";
 import logger from "morgan";
 import schema from "./schema";
 import { sendSecretMail } from "./utils";
-
-
-sendSecretMail("qkfltp01@naver.com", "123");
+try {
+  // sendSecretMail("xogh504@gmail.com", "123");
+  console.log("success");
+} catch (error) {
+  console.log(error);
+}
 
 const PORT = process.env.PORT || 4000;
 const server = new GraphQLServer({ schema });
-
+//보낼때마다 logger를 통하게 되서 계속 dev를 뛰워줌
 server.express.use(logger("dev"));
 
 server.start({ port: PORT }, () =>
