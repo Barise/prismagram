@@ -3,7 +3,8 @@
 //하지만여기선 local state로 사용
 
 export const defaults = {
-    isLogginedIn : localStorage.getItem("token") !== null ? true: false
+    
+  isLoggedIn: Boolean(localStorage.getItem("token")) || false
 };
 
 export const resolvers = {
